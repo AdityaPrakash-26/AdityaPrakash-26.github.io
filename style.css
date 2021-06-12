@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 body {
     /* original color background-color: #282a2d; */
     background-color: #1a1c1e;
@@ -5,7 +9,7 @@ body {
     font-family: "Oswald", sans-serif;
     letter-spacing: 0.1rem;
     margin: 0;
-    overflow: hidden;
+    position: relative;
     perspective: 1000px;
 }
 
