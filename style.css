@@ -111,15 +111,13 @@ h3 {
     float: right;
     height: 70%;
     overflow: scroll;
-    margin-bottom: 20%;
-    margin-left: 5%;
 }
 .halfWidthPhoto {
     width: 45%;
     float: right;
     margin-top: -50px;
-    margin-right: 5px;
-    margin-bottom: 20%;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
 @media screen and (max-width: 1000px) {
     .halfWidth {
