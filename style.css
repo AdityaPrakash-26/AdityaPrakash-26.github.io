@@ -25,8 +25,8 @@ body {
 
 @media screen and (max-width: 430px) {
     #mapIcon {
-        margin-top: 64px;
-        margin-right: 24px;
+        top: 5%;
+        right: 5%;
     }
 }
 
@@ -144,9 +144,8 @@ h3 {
 }
 @media screen and (max-width: 540px) {
     .paraHolder {
-        top: 200px;
+        margin-top: 20vh;
         font-size: medium;
-        margin-top: 150px;
         margin-left: 40px;
         margin-right: 40px;
         height: 60%;
@@ -426,6 +425,11 @@ blockquote p {
     font-family: "PT Serif", Cambria, "Hoefler Text", Utopia, "Liberation Serif",
         "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 	margin-bottom: 5vh;
+}
+@media screen and (max-width: 380px) {
+    blockquote p {
+        font-size: 14px;
+    }
 }
 blockquote footer {
     margin-top: 0.5em;
