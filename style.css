@@ -359,7 +359,7 @@ a:visited {
 .panel__zoom {
     cursor: pointer;
     left: 50%;
-    opacity: 0.4;
+    opacity: 1;
     position: absolute;
     top: 40%;
     transform: translateX(-50%) translateY(-50%) translateY(-12vmin);
