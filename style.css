@@ -112,6 +112,13 @@ h3 {
     height: 70%;
     overflow: scroll;
 }
+.halfWidth::-webkit-scrollbar {
+    display: none;
+}
+.halfWidth {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 .halfWidthPhoto {
     width: 45%;
     float: right;
