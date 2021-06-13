@@ -17,7 +17,7 @@ body {
     top: 10%;
     right: 10%;
     float: right;
-    transform: scale(2);
+    transform: scale(0.7);
     cursor: pointer;
     position: sticky;
     opacity: 1;
