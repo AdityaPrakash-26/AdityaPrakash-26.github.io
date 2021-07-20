@@ -27,7 +27,7 @@ body {
 	background-size: cover;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1500px) {
     .background-image {
         left: -8%;
         opacity: 0.3;
