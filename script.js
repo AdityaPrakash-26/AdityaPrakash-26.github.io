@@ -34,7 +34,8 @@ var zoom = doc.getElementsByClassName('js-zoom');
 var nav_up = doc.getElementsByClassName('js-up'),
     nav_left = doc.getElementsByClassName('js-left'),
     nav_right = doc.getElementsByClassName('js-right'),
-    nav_down = doc.getElementsByClassName('js-down');
+    nav_down = doc.getElementsByClassName('js-down'),
+    nav_left_twice = doc.getElementsByClassName('js-left-twice');
 
 // Tracking
 var pos_x = 0,
@@ -91,6 +92,10 @@ for (var x = 0; x < nav_up.length; x++) {
 
 for (var x = 0; x < nav_left.length; x++) {
     nav_left[x].addEventListener('click', moveLeft);
+}
+
+for (var x = 0; x < nav_left_twice.length; x++) {
+    nav_left_twice[x].addEventListener('click', moveLeftTwice);
 }
 
 for (var x = 0; x < nav_right.length; x++) {
