@@ -1,6 +1,13 @@
 console.log("Hello there! Thank you for visiting my website. If you are looking for the source code, it can be found at: https://github.com/AdityaPrakash-26/AdityaPrakash-26.github.io");
 console.log("Feel free to report bugs and share your feedback. Hope to see you there! :D");
 
+//hide the address bar
+window.addEventListener("load",function() {
+    setTimeout(function(){
+        window.scrollTo(0, 1);
+    }, 0);
+});
+
 // Global
 var win = window,
     doc = document;
