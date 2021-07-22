@@ -25,12 +25,58 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+
+    transition: opacity 1s ease-in-out;
+
+    -webkit-animation:background-image 1s cubic-bezier(.4, .8, .8, 1);
+	-moz-animation:background-image 1s cubic-bezier(.4, .8, .8, 1);
+	animation:background-image 1s cubic-bezier(.4, .8, .8, 1);	
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
 }
+@media screen and (max-width: 767px) {
+    .background-image {
+    -webkit-animation:background-image .8s cubic-bezier(.4, .8, .8, 1);
+    -moz-animation:background-image .8s cubic-bezier(.4, .8, .8, 1);
+    animation:background-image .8s cubic-bezier(.4, .8, .8, 1);		
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    @-webkit-keyframes background-image {
+        0% {opacity: 0;transform: scale(1.2);}
+        100% {opacity: 1;transform: scale(1);}	
+        }
+        
+        @keyframes background-image {
+        0% {opacity: 0;transform: scale(1.2);}
+        100% {opacity: 0.3;transform: scale(1);}	
+        }
+}
+
+@media screen and (min-width: 1500px) {
+    @-webkit-keyframes background-image {
+    0% {opacity: 0;transform: scale(1.2);}
+    100% {opacity: 1;transform: scale(1);}	
+    }
+
+    @keyframes background-image {
+    0% {opacity: 0;transform: scale(1.2);}
+    100% {opacity: 1;transform: scale(1);}	
+    }
+}
+    @media screen and (max-width:480px) {
+        .background-image {
+            left: -10%;
+        }	
+    }
 
 @media screen and (max-width:1500px) {
     .background-image {
-        left: -8%;
+        left: -10%;
         opacity: 0.3;
+        transition: opacity 1s;
         height: 100vh; /* You must set a specified height */
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
@@ -531,4 +577,45 @@ blockquote:nth-of-type(even) footer:before {
     .row {
         display: block;
     }
+}
+
+/* new stuff */
+@-webkit-keyframes animate {
+	0% {opacity: 0;-webkit-transform: translateY(100%);}
+	100% {opacity: 1;-webkit-transform: translateY(0%);}	
+}
+
+@keyframes animate {
+	0% {opacity: 0;transform: translateY(30vh);}
+	100% {opacity: 1;transform: translateY(0%);}	
+}
+
+/* animation delays */
+.delay2 { 
+    -webkit-animation-delay: .2s; 
+    animation-delay: .2s;
+}
+
+.delay4 { 
+    -webkit-animation-delay: .4s; 
+    animation-delay: .4s;
+}
+
+.delay6 { 
+    -webkit-animation-delay: .6s; 
+    animation-delay: .6s;
+}
+.delay8 { 
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+}
+
+.delay10 { 
+    -webkit-animation-delay: 1s; 
+    animation-delay: 1s;
+}
+
+.delay12 { 
+    -webkit-animation-delay: 1.2s; 
+    animation-delay: 1.2s;
 }
