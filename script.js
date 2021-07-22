@@ -137,3 +137,16 @@ function zoomIn() {
     }
     removeClass(site, 'show-all');
 }
+
+function changeState() {
+    var mobileStateOne = doc.getElementById('mobile-state-one');
+    var mobileStateTwo = doc.getElementById('mobile-state-two');
+
+    if(mobileStateOne.style.display === 'none') {
+        mobileStateOne.style.display = 'block';
+        mobileStateTwo.style.display = 'none';
+    } else {
+        mobileStateOne.style.display = 'none';
+        mobileStateTwo.style.display = 'block';
+    }
+}

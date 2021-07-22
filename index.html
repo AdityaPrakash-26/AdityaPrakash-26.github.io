@@ -56,7 +56,7 @@
 
 	<div class="site-wrap">
 		<div class="panel-wrap animate--none">
-			<div class="panel" data-x-pos="0" data-y-pos="0" id="home_panel">
+			<div class="panel" data-x-pos="0" data-y-pos="0" id="home_panel"  onclick="javascript:changeState()">
 				<div class="background-image">
 
 				</div>
@@ -70,12 +70,33 @@
 				<span class="panel__nav panel__nav--right-down js-down js-right">Color<br>Detection</span>
 				<span class="panel__nav panel__nav--down js-down">Testimonials</span>
 				<span class="panel__zoom js-zoom">View All</span>
-				<h1>
-					<a><span class="hello-red span-hello animate on-hover-40 js-up delay"></span></a>
+
+				<!-- for desktop -->
+				<h1 id="desktopHeader">
+					<a><span class="hello-red span-hello animate on-hover-40 js-up delay hide" id="span-hello-desktop"></span></a>
 					<br>
-					<a><span class="animate span-iam on-hover-40 js-down js-left-twice delay4"></span><br></a>
-					<a><span class="animate span-aditya on-hover-40 js-left delay8"></span></a>
+					<a><span class="animate span-iam on-hover-40 js-down js-left-twice delay4" id = "span-iam-desktop"></span><br></a>
+					<a><span class="animate span-aditya on-hover-40 js-left delay8" id = "span-aditya-desktop"></span></a>
 				</h1>
+				
+				<!-- for mobile -->
+				<h1 id="mobileHeader">
+					<div id = "mobile-state-one">
+						<a><span class="hello-red span-hello animate on-hover-40 js-up delay hide" id="span-hello-desktop"></span></a>
+						<br>
+						<a><span class="animate span-iam on-hover-40 js-down js-left-twice delay4" id = "span-iam-desktop"></span><br></a>
+						<a><span class="animate span-aditya on-hover-40 js-left delay8" id = "span-aditya-desktop"></span></a>
+					</div>
+
+					<div id = "mobile-state-two" style="display: none;">
+						<a><span class="hello-red animate on-hover-40 js-up delay hide" id="span-hello-mobile">Work</span></a>
+						<br>
+						<a><span class="animate on-hover-40 js-down js-left-twice delay4" id = "span-iam-mobile">Contact</span><br></a>
+						<a><span class="animate on-hover-40 js-left delay8" id = "span-aditya-mobile">About</span></a>
+					</div>
+				</h1>
+				<div class="tap-div">Tap to know more</div>
+				<!-- <div class="hover-div">Hover to know more</div> -->
 			</div>
 			<div class="panel" data-x-pos="-1" data-y-pos="0" id="about_panel">
 				<span class="panel__nav panel__nav--left-top js-left js-up">i-School</span>

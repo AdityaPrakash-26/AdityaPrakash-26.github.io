@@ -330,6 +330,39 @@ a:visited {
     #mobileHeader{
         display: none;
     }
+    .hover-div {
+        background: transparent;
+		position: absolute;
+		width: 100%;
+        text-align: center;
+		width: 100%;
+		color: #ffffff;
+		position: fixed;
+		bottom: 8%;
+		font-size: 0.4em; 
+        font-size: 2.0vm;
+        font-size: 2.0vmin;
+		animation: bounce 1s infinite alternate;
+		
+		-webkit-animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;
+		-moz-animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;
+		animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;	
+	}
+    @keyframes bounce {
+        from {
+            transform: translateY(0px);
+        } to {
+            transform: translateY(-10px);
+        }
+    }
+    
+    @-webkit-keyframes bounce {
+        from {
+            transform: translateY(0px);
+        } to {
+            transform: translateY(-10px);
+        }
+    }
 }
 
 .panel-wrap {
