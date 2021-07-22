@@ -276,11 +276,59 @@ a:visited {
     transition: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
+    #desktopHeader{
+        display: none;
+    }
     .on-hover-40:hover {
         margin-left: 0px;
     }
     .on-hover--40:hover {
         margin-left: 0px;
+    }
+    .tap-div {
+        background: transparent;
+		position: absolute;
+		width: 100%;
+        text-align: center;
+		width: 100%;
+		color: #ffffff;
+		position: fixed;
+		bottom: 8%;
+		font-size: 0.6em; 
+        font-size: 3.6vm;
+        font-size: 3.6vmin;
+		animation: bounce 1s infinite alternate;
+		
+		-webkit-animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;
+		-moz-animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;
+		animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;	
+	}
+    @keyframes bounce {
+        from {
+            transform: translateY(0px);
+        } to {
+            transform: translateY(-10px);
+        }
+    }
+    
+    @-webkit-keyframes bounce {
+        from {
+            transform: translateY(0px);
+        } to {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .tap-div{
+        display: none;
+    }
+    .mobile-hider{
+        display: none;
+    }
+    #mobileHeader{
+        display: none;
     }
 }
 
@@ -579,8 +627,11 @@ blockquote:nth-of-type(even) footer:before {
     }
 }
 
-/* new stuff */
-@-webkit-keyframes animate {
+/* 
+ * this breaks the panel transition, but disabling it removes
+ * the text animation
+ */
+/* @-webkit-keyframes animate {
 	0% {opacity: 0;-webkit-transform: translateY(100%);}
 	100% {opacity: 1;-webkit-transform: translateY(0%);}	
 }
@@ -588,7 +639,7 @@ blockquote:nth-of-type(even) footer:before {
 @keyframes animate {
 	0% {opacity: 0;transform: translateY(30vh);}
 	100% {opacity: 1;transform: translateY(0%);}	
-}
+} */
 
 /* animation delays */
 .delay2 { 
