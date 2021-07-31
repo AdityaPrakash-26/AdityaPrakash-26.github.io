@@ -279,6 +279,9 @@ a:visited {
     #desktopHeader{
         display: none;
     }
+    .hover-div{
+        display: none;
+    }
     .on-hover-40:hover {
         margin-left: 0px;
     }
