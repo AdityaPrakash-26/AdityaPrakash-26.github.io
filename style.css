@@ -187,16 +187,16 @@ h3 {
 .halfWidth::-webkit-scrollbar {
     display: none;
 }
-.halfWidth {
+/* .halfWidth {
     -ms-overflow-style: none;  
     scrollbar-width: none; 
-}
+} */
 .halfWidthPhoto {
     width: 45%;
     float: right;
     margin-top: -50px;
     margin-right: 5%;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 }
 @media screen and (max-width: 1000px) {
     .halfWidth {
@@ -630,13 +630,32 @@ blockquote:nth-of-type(even) footer:before {
 }
 
 /* HIDE SCROLL BARS */
-.paraHolder::-webkit-scrollbar {
+/* .paraHolder::-webkit-scrollbar {
 	display: none;
-}
+} */
 
 .paraHolder {
-	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
+	overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.scrollbarStyle::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 150, 173, 0.3);
+    border-radius: 10px;
+    background-color: #1a1c1e;
+}
+
+.scrollbarStyle::-webkit-scrollbar{
+    width: 10px;
+    background-color: #1a1c1e;
+}
+
+.scrollbarStyle::-webkit-scrollbar-thumb{
+    background-color: #ff96ad;
+    border-radius: 10px;
+    /* background-image: -webkit-gradient(linear, 0 0, 0 100%,
+                    color-stop(.5, rgba(255, 255, 255, .2)),
+                    color-stop(.5, transparent), to(transparent)); */
 }
 
 #lane-vid{
