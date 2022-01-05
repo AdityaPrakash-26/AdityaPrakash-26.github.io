@@ -160,3 +160,16 @@ function changeState() {
         mobileStateTwo.style.display = 'block';
     }
 }
+
+function isOverflown(element) {
+    return element.scrollHeight > element.clientHeight;
+}
+
+var paraHolders = document.getElementsByClassName('paraHolder');
+
+for (var i = 0; i < paraHolders.length; i++) {
+    var para = paraHolders[i];
+    if(isOverflown(para)) {
+        para.classList.add('scrollbarStyle');
+    }
+}
