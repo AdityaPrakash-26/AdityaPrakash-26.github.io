@@ -831,10 +831,52 @@ blockquote:nth-of-type(even) footer:before {
     border: none;
     cursor: pointer;
     line-height: 1.5;
-    font: 700 1.2rem "Roboto Slab", sans-serif;
+    font: 700 1rem "Roboto Slab", sans-serif;
     padding: 1em 2em;
     letter-spacing: 0.05rem;
 }
+@media screen and (max-width: 310px){
+    .btn{
+        padding: 0.8em 0.8em;
+    }
+}
 .btn:focus {
     outline: 2px dotted #ff96ad;
+}
+
+/* SKILL ICONS */
+/* a container which will hold skill icons and whose width matches that of parent */
+.skill-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.skill-icon{
+    /* width: 10%;
+    height: 10%; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.skill-image-wrapper{
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 956px) {
+    .skill-container{
+        flex: 1;
+        flex-wrap: wrap;
+    }
+    .skill-image-wrapper{
+        width: 30%;
+        height: 30%;
+    }
 }
