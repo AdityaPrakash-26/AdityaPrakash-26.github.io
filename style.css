@@ -274,7 +274,7 @@ h5 {
     content: "I am";
     opacity: 0;;
     animation: pulse 2s;
-    animation-delay: 300ms;
+    animation-delay: 400ms;
     animation-fill-mode: forwards;
 }
 .span-iam:hover:after {
@@ -284,7 +284,7 @@ h5 {
     content: "Aditya";
     opacity: 0;
     animation: pulse 2s;
-    animation-delay: 600ms;
+    animation-delay: 800ms;
     animation-fill-mode: forwards;
 }
 .span-aditya:hover:after {
