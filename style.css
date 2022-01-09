@@ -265,18 +265,27 @@ h5 {
 }
 .span-hello:after {
     content: "Hello.";
+    animation: pulse 2s;
 }
 .span-hello:hover:after {
     content: "Work";
 }
 .span-iam:after {
     content: "I am";
+    opacity: 0;;
+    animation: pulse 2s;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
 }
 .span-iam:hover:after {
     content: "Contact";
 }
 .span-aditya:after {
     content: "Aditya";
+    opacity: 0;
+    animation: pulse 2s;
+    animation-delay: 600ms;
+    animation-fill-mode: forwards;
 }
 .span-aditya:hover:after {
     content: "About";
@@ -743,15 +752,30 @@ blockquote:nth-of-type(even) footer:before {
  * this breaks the panel transition, but disabling it removes
  * the text animation
  */
-/* @-webkit-keyframes animate {
-	0% {opacity: 0;-webkit-transform: translateY(100%);}
-	100% {opacity: 1;-webkit-transform: translateY(0%);}	
+
+ /* FIXED!!! */
+@-webkit-keyframes pulse {
+	0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+    }
+
+	100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
 }
 
-@keyframes animate {
-	0% {opacity: 0;transform: translateY(30vh);}
-	100% {opacity: 1;transform: translateY(0%);}	
-} */
+@keyframes pulse {
+	0% {
+        opacity: 0;
+        transform: translateY(30vh);
+    }
+	100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }	
+}
 
 /* animation delays */
 .delay2 { 
