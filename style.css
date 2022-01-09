@@ -766,6 +766,18 @@ blockquote:nth-of-type(even) footer:before {
     }
 }
 
+@-moz-keyframes pulse {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0%);
+    }
+}
+
 @keyframes pulse {
 	0% {
         opacity: 0;
