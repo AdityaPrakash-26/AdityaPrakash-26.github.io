@@ -25,15 +25,15 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
     transition: opacity 1s ease-in-out;
-
+    
     -webkit-animation:background-image 1s cubic-bezier(.4, .8, .8, 1);
 	-moz-animation:background-image 1s cubic-bezier(.4, .8, .8, 1);
 	animation:background-image 1s cubic-bezier(.4, .8, .8, 1);	
 	-webkit-animation-fill-mode:backwards;
 	-moz-animation-fill-mode:backwards;
 	animation-fill-mode:backwards;
+    animation-delay: 2000ms;
 }
 @media screen and (max-width: 767px) {
     .background-image {
@@ -274,7 +274,7 @@ h5 {
     content: "I am";
     opacity: 0;;
     animation: pulse 1.6s;
-    animation-delay: 400ms;
+    animation-delay: 750ms;
     animation-fill-mode: forwards;
 }
 .span-iam:hover:after {
@@ -284,7 +284,7 @@ h5 {
     content: "Aditya";
     opacity: 0;
     animation: pulse 1.6s;
-    animation-delay: 800ms;
+    animation-delay: 1500ms;
     animation-fill-mode: forwards;
 }
 .span-aditya:hover:after {
