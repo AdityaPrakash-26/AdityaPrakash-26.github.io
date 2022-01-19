@@ -265,7 +265,7 @@ h5 {
 }
 .span-hello:after {
     content: "Hello.";
-    animation: pulse 1.6s;
+    animation: pulse 1s;
 }
 .span-hello:hover:after {
     content: "Work";
@@ -273,7 +273,7 @@ h5 {
 .span-iam:after {
     content: "I am";
     opacity: 0;;
-    animation: pulse 1.6s;
+    animation: pulse 1s;
     animation-delay: 750ms;
     animation-fill-mode: forwards;
 }
@@ -283,7 +283,7 @@ h5 {
 .span-aditya:after {
     content: "Aditya";
     opacity: 0;
-    animation: pulse 1.6s;
+    animation: pulse 1s;
     animation-delay: 1500ms;
     animation-fill-mode: forwards;
 }
