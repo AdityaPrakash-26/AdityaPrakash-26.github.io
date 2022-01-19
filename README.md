@@ -15,7 +15,6 @@ I am always open to suggestions and improvements.
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" class="skill-icon" alt="css5" style = "height: 50px; width: 50px"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" class="skill-icon" alt="JavaScript" style = "height: 50px; width: 50px"/>
 </div>
-<br>
 
 ## Contact:
 - Email: prakashadityaap@gmail.com
