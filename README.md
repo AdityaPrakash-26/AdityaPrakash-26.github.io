@@ -4,7 +4,7 @@
 
 <img width="2560" alt="websiteSnapshot" src="https://user-images.githubusercontent.com/55011564/126927559-9439eb02-0381-4b85-b851-0d21f63009b2.png">
 
-Thank you for visiting my website. It was certainly one of the most challenging but fun projects I have ever undertaken. You can check it out at [adityaprakash.tech](https://adityaprakash.tech).
+Thank you for visiting my website. It was certainly one of the most challenging but fun projects I have ever undertaken. You can check it out at [aditya-prakash.me](https://aditya-prakash.me).
 
 I am always open to suggestions and improvements.
 
