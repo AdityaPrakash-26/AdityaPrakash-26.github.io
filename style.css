@@ -272,7 +272,7 @@ h5 {
 }
 .span-iam:after {
     content: "I am";
-    opacity: 0;;
+    opacity: 0;
     animation: pulse 1s;
     animation-delay: 750ms;
     animation-fill-mode: forwards;
@@ -289,6 +289,24 @@ h5 {
 }
 .span-aditya:hover:after {
     content: "About";
+}
+
+#span-hello-mobile {
+    animation: pulse 1s;
+}
+
+#span-iam-mobile {
+    opacity: 0;
+    animation: pulse 1s;
+    animation-delay: 750ms;
+    animation-fill-mode: forwards;
+}
+
+#span-aditya-mobile {
+    opacity: 0;
+    animation: pulse 1s;
+    animation-delay: 1500ms;
+    animation-fill-mode: forwards;
 }
 
 a,
