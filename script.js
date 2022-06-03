@@ -2,8 +2,8 @@ console.log("Hello there! Thank you for visiting my website. If you are looking 
 console.log("Feel free to report bugs and share your feedback. Hope to see you on my repo! :D");
 
 //hide the address bar
-window.addEventListener("load",function() {
-    setTimeout(function(){
+window.addEventListener("load", function() {
+    setTimeout(function() {
         window.scrollTo(0, 1);
     }, 0);
 });
@@ -53,7 +53,7 @@ var pos_x = 0,
 
 function setPos() {
     wrap.style.transform = 'translateX(' + pos_x + '00%) translateY(' + pos_y + '00%)';
-    setTimeout(function () {
+    setTimeout(function() {
         removeClass(wrap, 'animate');
     }, 600);
 }
@@ -74,13 +74,13 @@ function moveLeft() {
 
 function moveLeftTwice() {
     addClass(wrap, 'animate');
-    pos_x+=2;
+    pos_x += 2;
     setPos();
 }
 
 function moveDownTwice() {
     addClass(wrap, 'animate');
-    pos_y-=2;
+    pos_y -= 2;
     setPos();
 }
 
@@ -127,7 +127,7 @@ function zoomOut(e) {
     pos_y = 0;
     setPos();
     for (var x = 0; x < panel.length; x++) {
-        (function (_x) {
+        (function(_x) {
             panel[_x].addEventListener('click', setPanelAndZoom);
         })(x);
     }
@@ -152,7 +152,7 @@ function changeState() {
     var mobileStateOne = doc.getElementById('mobile-state-one');
     var mobileStateTwo = doc.getElementById('mobile-state-two');
 
-    if(mobileStateOne.style.display === 'none') {
+    if (mobileStateOne.style.display === 'none') {
         mobileStateOne.style.display = 'block';
         mobileStateTwo.style.display = 'none';
     } else {
@@ -169,7 +169,19 @@ var paraHolders = document.getElementsByClassName('paraHolder');
 
 for (var i = 0; i < paraHolders.length; i++) {
     var para = paraHolders[i];
-    if(isOverflown(para)) {
+    if (isOverflown(para)) {
         para.classList.add('scrollbarStyle');
+    }
+}
+
+function toggleDescription(id) {
+    if (!document.getElementById(id).style.display || document.getElementById(id).style.display === 'none') {
+        document.getElementById(id).style.display = 'block';
+        document.getElementById(`${id}-toggle-arrow-up`).style.display = 'inline-block';
+        document.getElementById(`${id}-toggle-arrow-down`).style.display = 'none';
+    } else {
+        document.getElementById(id).style.display = 'none';
+        document.getElementById(`${id}-toggle-arrow-up`).style.display = 'none';
+        document.getElementById(`${id}-toggle-arrow-down`).style.display = 'inline-block';
     }
 }
