@@ -849,6 +849,7 @@ ul.normal-list li::after {
 }
 
 ul.two-column-list {
+    padding: 0;
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -1103,11 +1104,11 @@ ul.two-column-list {
     }
     .paraHolder {
         margin-top: 140px;
-        margin-left: 15%;
+        margin-left: 20px;
     }
     .paraHolderNoScroll {
         margin-top: 140px;
-        margin-left: 15%;
+        margin-left: 20px;
     }
 }
 
