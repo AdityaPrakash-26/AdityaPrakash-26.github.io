@@ -1083,6 +1083,12 @@ ul.two-column-list {
     .row {
         display: block;
     }
+    .item-list-with-lines {
+        padding-left: 0px;
+    }
+    .education-list {
+        padding: 15px;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -1104,11 +1110,11 @@ ul.two-column-list {
     }
     .paraHolder {
         margin-top: 140px;
-        margin-left: 20px;
+        margin-left: 35px;
     }
     .paraHolderNoScroll {
         margin-top: 140px;
-        margin-left: 20px;
+        margin-left: 35px;
     }
 }
 
