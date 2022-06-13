@@ -11,10 +11,8 @@ var pos_x = 0,
 
 // check whether tha url has a particular panel
 function checkUrl(url) {
-	console.log(url);
 	if (url.indexOf("#") > -1) {
 		var panel = url.split("#")[1];
-		console.log(panel);
 		if (panel == "about") {
 			pos_x = 1;
 			pos_y = 0;
