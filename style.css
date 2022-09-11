@@ -772,6 +772,16 @@ blockquote:nth-of-type(even) footer:before {
 }
 
 
+/* CUSTOM CONTACT ICONS */
+
+.contact-icon {
+    display: inline;
+    width: 22px;
+    height: 24px;
+    padding: 0;
+}
+
+
 /* SKILL ICONS */
 
 
