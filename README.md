@@ -11,9 +11,9 @@ I am always open to suggestions and improvements.
 ## Tools used:
 
 <div style="display: flex">
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" class="skill-icon" alt="html5" style = "height: 50px; width: 50px"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" class="skill-icon" alt="css5" style = "height: 50px; width: 50px"/>
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" class="skill-icon" alt="JavaScript" style = "height: 50px; width: 50px"/>
+<img src="https://user-images.githubusercontent.com/55011564/208604076-afe47e54-1208-47a9-a29c-39f8e33a52d3.png" class="skill-icon" alt="html5" style = "height: 50px; width: 50px"/>
+<img src="https://user-images.githubusercontent.com/55011564/208604401-7c01bd19-3cc5-4f07-a276-f56168942dff.png" class="skill-icon" alt="css5" style = "height: 50px; width: 50px"/>
+<img src="https://user-images.githubusercontent.com/55011564/208604607-c614eea6-91f6-40c1-a180-043a6f678295.png" class="skill-icon" alt="JavaScript" style = "height: 50px; width: 50px"/>
 </div>
 
 ## Contact:
