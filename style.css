@@ -56,6 +56,18 @@ img {
     object-fit: contain;
 }
 
+svg {
+    display: block;
+    padding-top: 20px;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 img .long {
     width: 50%;
     height: 70%;
