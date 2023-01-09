@@ -169,6 +169,18 @@ function zoomOut(e) {
 			panel[_x].addEventListener("click", setPanelAndZoom);
 		})(x);
 	}
+	// remove zoom out event listener
+	for (var x = 0; x < zoom.length; x++) {
+		zoom[x].removeEventListener("click", zoomOut);
+	}
+
+	for (var x = 0; x < zoom.length; x++) {
+		zoom[x].addEventListener("click", zoomIn);
+	}
+
+	// change the icon
+	removeClass(doc.getElementById("zoom-icon"), "fa-search-minus");
+	addClass(doc.getElementById("zoom-icon"), "fa-search-plus");
 }
 
 function setPanelAndZoom(e) {
@@ -183,6 +195,19 @@ function zoomIn() {
 		panel[x].removeEventListener("click", setPanelAndZoom);
 	}
 	removeClass(site, "show-all");
+
+	// remove zoom in event listener
+	for (var x = 0; x < zoom.length; x++) {
+		zoom[x].removeEventListener("click", zoomIn);
+	}
+
+	for (var x = 0; x < zoom.length; x++) {
+		zoom[x].addEventListener("click", zoomOut);
+	}
+
+	// change the icon
+	removeClass(doc.getElementById("zoom-icon"), "fa-search-plus");
+	addClass(doc.getElementById("zoom-icon"), "fa-search-minus");
 }
 
 function changeState() {

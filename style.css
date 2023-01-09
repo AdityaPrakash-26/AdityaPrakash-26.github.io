@@ -37,7 +37,7 @@ body {
     animation-delay: 2000ms;
 }
 
-#mapIcon {
+#zoom-icon {
     top: 5%;
     right: 5%;
     float: right;
@@ -1126,7 +1126,7 @@ ul.two-column-list {
 }
 
 @media screen and (max-width: 430px) {
-    #mapIcon {
+    #zoom-icon {
         top: 5%;
         right: 5%;
     }
