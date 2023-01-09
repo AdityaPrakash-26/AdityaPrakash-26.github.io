@@ -16,7 +16,7 @@ body {
 }
 
 .background-image {
-    background-image: url(assets/hero-bg.webp);
+    background-image: url(assets/hero-bg.png);
     position: fixed;
     top: 0;
     right: 0;
