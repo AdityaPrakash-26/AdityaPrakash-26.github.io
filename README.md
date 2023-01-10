@@ -2,7 +2,7 @@
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=adityaprakash26.adityaprakash-26.github.io)
 
-<img width="2560" alt="websiteSnapshot" src="https://user-images.githubusercontent.com/55011564/126927559-9439eb02-0381-4b85-b851-0d21f63009b2.png">
+<img src="https://user-images.githubusercontent.com/55011564/211473100-bc30a34c-37ff-4129-bc7a-1c7c7e911a61.png">
 
 Thank you for visiting my website. It was certainly one of the most challenging but fun projects I have ever undertaken. You can check it out at [aditya-prakash.me](https://aditya-prakash.me).
 
