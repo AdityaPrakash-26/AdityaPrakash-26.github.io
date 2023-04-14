@@ -211,6 +211,21 @@ function zoomIn() {
 }
 
 doc.addEventListener("wheel", function (e) {
+	if (e.target.classList.contains("no-scroll") || e.target.closest(".no-scroll")) {
+		// always allow zoom in
+		if (e.deltaY < 0) {
+			// get the slide on which the cursor currently is
+			var slide = document.elementFromPoint(
+				e.clientX,
+				e.clientY
+			).closest(".panel");
+			pos_x = -slide.getAttribute("data-x-pos");
+			pos_y = slide.getAttribute("data-y-pos");
+			setPos();
+			zoomIn();
+		}
+		return;
+	}
 	if (e.deltaY > 0) {
 		zoomOut(e);
 	}
