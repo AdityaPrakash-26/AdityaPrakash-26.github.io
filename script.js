@@ -224,7 +224,13 @@ doc.addEventListener("wheel", function (e) {
 			setPos();
 			zoomIn();
 		}
-		return;
+
+		
+		var parent = e.target.closest(".paraHolder");
+		// if there is content overflow, then allow scrolling, otherwise zoom out
+		if (parent.scrollHeight > parent.clientHeight) {
+			return;
+		}
 	}
 	if (e.deltaY > 0) {
 		zoomOut(e);
