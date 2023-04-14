@@ -210,6 +210,24 @@ function zoomIn() {
 	addClass(doc.getElementById("zoom-icon"), "fa-search-minus");
 }
 
+doc.addEventListener("wheel", function (e) {
+	if (e.deltaY > 0) {
+		zoomOut(e);
+	}
+
+	if (e.deltaY < 0) {
+		// get the slide on which the cursor currently is
+		var slide = document.elementFromPoint(
+			e.clientX,
+			e.clientY
+		).closest(".panel");
+		pos_x = -slide.getAttribute("data-x-pos");
+		pos_y = slide.getAttribute("data-y-pos");
+		setPos();
+		zoomIn();
+	}
+});
+
 function changeState() {
 	var mobileStateOne = doc.getElementById("mobile-state-one");
 	var mobileStateTwo = doc.getElementById("mobile-state-two");
