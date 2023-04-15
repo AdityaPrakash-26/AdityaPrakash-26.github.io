@@ -227,8 +227,35 @@ doc.addEventListener("wheel", function (e) {
 
 		
 		var parent = e.target.closest(".paraHolder");
-		// if there is content overflow, then allow scrolling, otherwise zoom out
 		if (parent.scrollHeight > parent.clientHeight) {
+			// if scrolling down
+			if (e.deltaY > 0) {
+				var toolTip = doc.createElement("div");
+				toolTip.setAttribute("class", "scroll-tooltip");
+				toolTip.innerHTML = "Zoomout not possible on this panel. Please click the magnifying glass icon to zoom out.";
+				parent.appendChild(toolTip);
+				setTimeout(function () {
+					toolTip.style.opacity = 1;
+				}, 1000);
+				setTimeout(function () {
+					toolTip.style.opacity = 0.8;
+				}, 1200);
+				setTimeout(function () {
+					toolTip.style.opacity = 0.6;
+				}, 1400);
+				setTimeout(function () {
+					toolTip.style.opacity = 0.4;
+				}, 1600);
+				setTimeout(function () {
+					toolTip.style.opacity = 0.2;
+				}, 1800);
+				setTimeout(function () {
+					toolTip.style.opacity = 0.0;
+				}, 2000);
+				setTimeout(function () {
+					parent.removeChild(toolTip);
+				}, 2100);
+			}
 			return;
 		}
 	}

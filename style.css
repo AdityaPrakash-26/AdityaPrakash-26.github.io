@@ -877,6 +877,22 @@ ul.two-column-list {
     -moz-columns: 2;
 }
 
+.scroll-tooltip {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    background-color: #ff96ad;
+    border: 1px solid #ff96ad;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
 @media screen and (max-width: 1500px) {
     @-webkit-keyframes background-image {
         0% {
