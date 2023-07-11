@@ -97,6 +97,19 @@ figcaption {
     width: 100vw;
 }
 
+.company-drawer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+.company {
+    width: 800px;
+}
+
+
+
 h1 {
     color: #ff96ad;
     text-transform: uppercase;
@@ -885,6 +898,11 @@ ul.normal-list {
     list-style-type: circle;
 }
 
+ul.normal-list li::before {
+    border-left: none;
+}
+
+
 ul.normal-list li::after {
     top: -5px;
 }
@@ -1009,6 +1027,12 @@ ul.two-column-list {
     }
     .panel__nav {
         font-size: 10px;
+    }
+    .company-drawer {
+        flex-direction: column;
+    }
+    .company {
+        width: 100%;
     }
 }
 

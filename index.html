@@ -406,24 +406,72 @@
                 <span class="panel__nav panel__nav--left-down js-down js-left">About Me</span>
                 <div class="paraHolder no-scroll">
                     <h2 class="no-scroll">Work</h2>
-                    Currently, I am working as a <span
-                    class="hello-red">Software Development Intern at Rakuten
-                    Symphony</span>. I have about <span class="strong-text">1
-                    year and 8 months </span>of experience working on live and
-                    production ready code. I have worked on a number of
-                    projects, ranging from a simple website to a complex
-                    enterprise software. I am proud to have collaborated with
-                    some awesome people from amazing companies and spearheaded
-                    some great projects.
+                    I'm proud to have worked with some notable firms and companies:
                     <br>
                     <br>
+                    <div class="company-drawer">
+                        <div class="company">
+                            <a href="https://watto.ai" target="_blank">
+                                <img src="https://logos-download.com/wp-content/uploads/2016/11/Y_Combinator_logo_text_wordmark.png" width="400"/>
+                            </a>
+                        </div>
+                        <div class="company">
+                        <a href="https://www.kamaleswaran.com/" target="_blank">
+                            <img src="https://cdn.freebiesupply.com/logos/large/2x/emory-university-logo-png-transparent.png" width="400"/>
+                        </a>
+                        </div>
+                        <div class="company">
+                        <a href="https://symphony.rakuten.com/" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Rakuten_Global_Brand_Logo.svg/2560px-Rakuten_Global_Brand_Logo.svg.png" width="400"/>
+                        </a>
+                        </div>
+                    </div>
+                        
                     <a class="btn draw-border no-scroll" href="assets/AdityaPrakashResume.pdf" download="Aditya Prakash.pdf">Download Resume</a>
                     <br>
                     <br>
                     <h5 class="no-scroll">Past Experience</h5>
                     <ul class="item-list-with-lines no-scroll">
                         <li>
-                            <h6 class="no-scroll" onclick="javascript:toggleDescription('workat-intern-desc')">SDE Intern - workat.tech
+                            <h6 class="no-scroll" onclick="javascript:toggleDescription('rakuten-intern-desc')">Rakuten Symphony
+                                <span id="rakuten-intern-desc-toggle-arrow-down">
+                                    <i class="fa fa-angle-down"></i>
+								</span>
+                                <span id="rakuten-intern-desc-toggle-arrow-up" style="display: none;">
+									<i class="fa fa-angle-up"></i>
+								</span>
+                            </h6>
+                            <div class="item-desc-text" id="rakuten-intern-desc">
+                                <ul class="normal-list">
+                                    <li>Spearheaded the development of the
+                                    algorithmic backbone of the automated
+                                    network predictor and manager. Wrote <span
+                                    class="strong-text">50+ algorithms</span>
+                                    for automation of network capacity
+                                    management, resulting in a <span class="strong-text">40% reduction</span> in
+                                    manual management efforts and a <span class="strong-text">60%
+                                    improvement</span> in network reliability.</li>
+
+                                    <li>Facilitated database connectivity with
+                                    Ubuntu through Docker, implementing
+                                    automation and easy setup of the code base
+                                    via shell scripts. Successfully migrated
+                                    from OracleDB to MySQL, which allowed for
+                                    seamless integration with Rakuten's existing
+                                    ecosystems. Additionally, switching to an
+                                    open-source DB saved the company over
+                                    <span class="strong-text">$100,000 in expenses.</span></li>
+
+                                    <li>Debugged C++ code, resolving compilation
+                                    issues and <span class="strong-text">reducing error rates by 15%.</span>
+                                    Developed Python scripts for dummy input
+                                    generation and database queries, resulting
+                                    in a <span class="strong-text">30% reduction in execution time.</span></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <h6 class="no-scroll" onclick="javascript:toggleDescription('workat-intern-desc')">workat.tech
                                 <span id="workat-intern-desc-toggle-arrow-down">
 									<i class="fa fa-angle-down"></i>
 								</span>
@@ -432,19 +480,15 @@
 								</span>
                             </h6>
                             <div class="item-desc-text" id="workat-intern-desc">
-                                I worked with <a href="https://workat.tech" target="_blank"
-                                    rel="noreferrer noopener"><span class="hello-red">workat.tech</span></a> as a Software Development Intern. My responsibilities
-                                include programming backend APIs, creating optimised
-                                SQL queries, developing the frontend, as well as
-                                implementing new features and improve existing ones.
-                                <br>
-                                <a href="https://workat.tech" target="_blank" rel="noreferrer noopener">
-                                    <img src="assets/workattech-large.webp" alt="workat.tech">
-                                </a>
+                                <ul class="normal-list">
+                                    <li>Developed the user profile page for over <span class="strong-text">50,000 users</span> with features like problem distribution, rank-card, progress bars, and a heat map of past submissions. Created an accompanying resume generator that can produce a concise 1-page resume from the coding profile, including language proficiency, past positions, and education.</li>
+                                    <li>Programmed a problem bookmarking system to filter <span class="strong-text">300+ problems across 4 difficulties and 14 topics</span>. Designed a smart problem recommender to list similar problems for correct submission, and simpler problems for incorrect ones.</li>
+                                    <li>Built a comprehensive compensation comparison page that allowed employees to compare their salaries and benefits against industry standards and company benchmarks. The tool was used by <span class="strong-text">100,000+ users</span> to accurately compare compensations, facts and figures, and hiring trends for over 25 companies.</li>
+                                </ul>
                             </div>
                         </li>
                         <li>
-                            <h6 onclick="javascript:toggleDescription('theischool-freelance-desc')">SDE Intern - eduMETA
+                            <h6 onclick="javascript:toggleDescription('theischool-freelance-desc')">eduMETA
                                 <span id="theischool-freelance-desc-toggle-arrow-down">
 									<i class="fa fa-angle-down"></i>
 								</span>
@@ -453,43 +497,11 @@
 								</span>
                             </h6>
                             <div class="item-desc-text" id="theischool-freelance-desc">
-                                I designed, developed, and deployed a full stack
-                                website for eduMETA. Notably, I
-                                improved the website performance by 50% over 3
-                                months and increased user retention by 30%.
-                                <br>
-                                <a href="https://theischool.com/" target="_blank" rel="noreferrer noopener">
-                                    <span class="hello-red">Website</span>
-                                </a>
-                                <br>
-                                <img src="assets/ischool.webp" alt="ischool">
-                                <br> Additionally, I worked on developing a school
-                                management system for the organization. The software
-                                is an android application, and offers different login
-                                types for Parents and Teachers, with their unique
-                                functionalities, and is fully responsive. I closely
-                                worked with the school staff to add features, address
-                                issues and provide the best possible and most streamlined
-                                experience for the school.
-                                <br>
-                                <br> The application has implementations for:
                                 <ul class="normal-list">
-                                    <li>Different authentication types</li>
-                                    <li>Attendance</li>
-                                    <li>Fee payment</li>
-                                    <li>Parent-Teacher communication</li>
-                                    <li>Homework reminders (for parents)</li>
-                                    <li>Batch management (for teachers)</li>
-                                    <li>School-Wide Announcements (for admins)</li>
+                                    <li>Engineered a school management software for managing day-to-day school activities. Scaled for use by over <span class="strong-text">3,000 users</span>. Provides features such as multiple authentications, fee payment, parent-teacher meetings, attendance, etc.</li>
+                                    <li>Designed and developed a full-stack website and a dashboard for admins. Pushed updates to <span class="strong-text">improve performance by 50% over 3 months.</span></li>
+                                    <li>Streamlined the admission form validation process with JavaScript scripts, resulting in a <span class="strong-text">100% reduction in erroneous form entries</span> and saving the institute more than <span class="strong-text">$50,000 in expenses and over 30 years of administrative time.</span></li>
                                 </ul>
-                                <div class="row">
-                                    <div class="column">
-                                        <img src="assets/login.webp" alt="login-page" style="width:100%">
-                                    </div>
-                                    <div class="column">
-                                        <img src="assets/attendance.webp" alt="attendance-page" style="width:100%">
-                                    </div>
-                                </div>
                             </div>
                         </li>
                     </ul>
@@ -972,7 +984,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Projects PANEL -->
+            <!-- PROJECTS PANEL -->
             <div class="panel no-scroll" data-x-pos="1" data-y-pos="1" id="projects_panel">
                 <span class="panel__nav panel__nav--left js-left">Work</span>
                 <span class="panel__nav panel__nav--left-down js-down js-left">Home</span>
