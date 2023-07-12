@@ -1028,6 +1028,10 @@ ul.two-column-list {
     .panel__nav {
         font-size: 10px;
     }
+    .quick-info-holder {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .company-drawer {
         flex-direction: column;
     }
@@ -1157,6 +1161,14 @@ ul.two-column-list {
     }
     .strong-text {
         font-size: 20px;
+    }
+    .info-icon {
+        width: 20px;
+        height: 20px;
+    }
+    #info-icon-grad {
+        width: 40px;
+        height: 40px;
     }
 }
 
