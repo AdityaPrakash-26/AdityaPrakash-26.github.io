@@ -615,9 +615,11 @@ blockquote:nth-of-type(even) footer:before {
 	blockquote {
 		padding: 1em 20% 1em 1em;
 	}
+
 	blockquote p {
 		font-size: 14pt;
 	}
+
 	blockquote:nth-of-type(even) {
 		padding: 1em 1em 1em 20%;
 	}
@@ -630,7 +632,7 @@ blockquote:nth-of-type(even) footer:before {
 }
 
 .paraHolder {
-	overflow-y: scroll;
+	overflow-y: auto;
 	overflow-x: hidden;
 }
 
@@ -680,6 +682,7 @@ blockquote:nth-of-type(even) footer:before {
 		opacity: 0;
 		-webkit-transform: translateY(100%);
 	}
+
 	100% {
 		opacity: 1;
 		-webkit-transform: translateY(0%);
@@ -691,6 +694,7 @@ blockquote:nth-of-type(even) footer:before {
 		opacity: 0;
 		-moz-transform: translateY(100%);
 	}
+
 	100% {
 		opacity: 1;
 		-moz-transform: translateY(0%);
@@ -702,6 +706,7 @@ blockquote:nth-of-type(even) footer:before {
 		opacity: 0;
 		transform: translateY(30vh);
 	}
+
 	100% {
 		opacity: 1;
 		transform: translateY(0%);
@@ -928,22 +933,36 @@ ul.two-column-list {
 	text-align: center;
 }
 
+.job-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font: italic;
+}
+
+.job-desc {
+	font-size: 20px;
+}
+
 @media screen and (max-width: 1500px) {
 	@-webkit-keyframes background-image {
 		0% {
 			opacity: 0;
 			transform: scale(1.2);
 		}
+
 		100% {
 			opacity: 1;
 			transform: scale(1);
 		}
 	}
+
 	@keyframes background-image {
 		0% {
 			opacity: 0;
 			transform: scale(1.2);
 		}
+
 		100% {
 			opacity: 0.3;
 			transform: scale(1);
@@ -957,16 +976,19 @@ ul.two-column-list {
 			opacity: 0;
 			transform: scale(1.2);
 		}
+
 		100% {
 			opacity: 1;
 			transform: scale(1);
 		}
 	}
+
 	@keyframes background-image {
 		0% {
 			opacity: 0;
 			transform: scale(1.2);
 		}
+
 		100% {
 			opacity: 1;
 			transform: scale(1);
@@ -990,9 +1012,11 @@ ul.two-column-list {
 	.about-intro-para {
 		flex-direction: column-reverse;
 	}
+
 	.about-intro-text {
 		width: 100%;
 	}
+
 	.about-intro-img {
 		width: 100%;
 		margin-bottom: 20px;
@@ -1011,6 +1035,7 @@ ul.two-column-list {
 		flex: 1;
 		flex-wrap: wrap;
 	}
+
 	.skill-image-wrapper {
 		width: 30%;
 		height: 30%;
@@ -1023,16 +1048,20 @@ ul.two-column-list {
 		-moz-animation: background-image 0.8s cubic-bezier(0.4, 0.8, 0.8, 1);
 		animation: background-image 0.8s cubic-bezier(0.4, 0.8, 0.8, 1);
 	}
+
 	.panel__nav {
 		font-size: 10px;
 	}
+
 	.quick-info-holder {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
+
 	.company-drawer {
 		flex-direction: column;
 	}
+
 	.company {
 		width: 100%;
 	}
@@ -1042,15 +1071,19 @@ ul.two-column-list {
 	#desktopHeader {
 		display: none;
 	}
+
 	.hover-div {
 		display: none;
 	}
+
 	.on-hover-40:hover {
 		margin-left: 0px;
 	}
+
 	.on-hover--40:hover {
 		margin-left: 0px;
 	}
+
 	.tap-div {
 		background: transparent;
 		position: absolute;
@@ -1064,24 +1097,26 @@ ul.two-column-list {
 		font-size: 3.6vm;
 		font-size: 3.6vmin;
 		animation: bounce 1s infinite alternate;
-		-webkit-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite
-			alternate;
-		-moz-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite
-			alternate;
+		-webkit-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
+		-moz-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
 		animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
 	}
+
 	@keyframes bounce {
 		from {
 			transform: translateY(0px);
 		}
+
 		to {
 			transform: translateY(-10px);
 		}
 	}
+
 	@-webkit-keyframes bounce {
 		from {
 			transform: translateY(0px);
 		}
+
 		to {
 			transform: translateY(-10px);
 		}
@@ -1092,12 +1127,15 @@ ul.two-column-list {
 	.tap-div {
 		display: none;
 	}
+
 	.mobile-hider {
 		display: none;
 	}
+
 	#mobileHeader {
 		display: none;
 	}
+
 	.hover-div {
 		background: transparent;
 		position: absolute;
@@ -1111,24 +1149,26 @@ ul.two-column-list {
 		font-size: 2vm;
 		font-size: 2vmin;
 		animation: bounce 1s infinite alternate;
-		-webkit-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite
-			alternate;
-		-moz-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite
-			alternate;
+		-webkit-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
+		-moz-animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
 		animation: bounce 0.5s cubic-bezier(0.5, 0.6, 0.6, 1) infinite alternate;
 	}
+
 	@keyframes bounce {
 		from {
 			transform: translateY(0px);
 		}
+
 		to {
 			transform: translateY(-10px);
 		}
 	}
+
 	@-webkit-keyframes bounce {
 		from {
 			transform: translateY(0px);
 		}
+
 		to {
 			transform: translateY(-10px);
 		}
@@ -1139,6 +1179,7 @@ ul.two-column-list {
 	h6 {
 		font-size: 28px;
 	}
+
 	ul.item-list-with-lines li:after {
 		top: 0;
 	}
@@ -1153,6 +1194,7 @@ ul.two-column-list {
 		height: 60%;
 		margin-bottom: 40px;
 	}
+
 	.paraHolderNoScroll {
 		margin-top: 20vh;
 		font-size: medium;
@@ -1161,13 +1203,16 @@ ul.two-column-list {
 		height: 60%;
 		margin-bottom: 40px;
 	}
+
 	.strong-text {
 		font-size: 20px;
 	}
+
 	.info-icon {
 		width: 20px;
 		height: 20px;
 	}
+
 	#info-icon-grad {
 		width: 40px;
 		height: 40px;
@@ -1178,9 +1223,11 @@ ul.two-column-list {
 	.row {
 		display: block;
 	}
+
 	.item-list-with-lines {
 		padding-left: 0px;
 	}
+
 	.education-list {
 		padding: 15px;
 	}
@@ -1190,9 +1237,11 @@ ul.two-column-list {
 	.background-image {
 		left: -10%;
 	}
+
 	h6 {
 		font-size: 18px;
 	}
+
 	ul.item-list-with-lines li:after {
 		top: -8px;
 	}
@@ -1203,10 +1252,12 @@ ul.two-column-list {
 		top: 5%;
 		right: 5%;
 	}
+
 	.paraHolder {
 		margin-top: 140px;
 		margin-left: 35px;
 	}
+
 	.paraHolderNoScroll {
 		margin-top: 140px;
 		margin-left: 35px;
