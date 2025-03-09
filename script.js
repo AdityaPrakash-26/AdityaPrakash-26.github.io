@@ -225,14 +225,26 @@ doc.addEventListener("wheel", function (e) {
 			zoomIn();
 		}
 
-		
 		var parent = e.target.closest(".paraHolder");
 		if (parent.scrollHeight > parent.clientHeight) {
 			// if scrolling down
 			if (e.deltaY > 0) {
+				if (localStorage.getItem("scroll-tooltip") === "false") {
+					return;
+				}
 				var toolTip = doc.createElement("div");
 				toolTip.setAttribute("class", "scroll-tooltip");
-				toolTip.innerHTML = "Zoomout not possible on this panel. Please click the magnifying glass icon to zoom out.";
+				toolTip.innerHTML = "Zoomout not possible on this panel. Please click the magnifying glass icon to zoom out. <span style='color: #fff; cursor: pointer;'><u><span id='noclick'>Don't show again.</span></u></span>";
+
+				toolTip.addEventListener("click", function (e) {
+					console.log(e.target.id);
+					if (e.target.id === "noclick") {
+						localStorage.setItem("scroll-tooltip", "false");
+						parent.removeChild(toolTip);
+					}
+					return;
+				});
+
 				parent.appendChild(toolTip);
 				setTimeout(function () {
 					toolTip.style.opacity = 1;

@@ -69,7 +69,7 @@
                 <span class="panel__nav panel__nav--right-top js-up js-right">Projects</span>
                 <span class="panel__nav panel__nav--left js-left">About Me</span>
                 <span class="panel__nav panel__nav--right js-right">Education</span>
-                <span class="panel__nav panel__nav--left-down js-down js-left">Hobbies</span>
+                <span class="panel__nav panel__nav--left-down js-down js-left">Research</span>
                 <span class="panel__nav panel__nav--right-down js-down js-right">Contact</span>
                 <span class="panel__nav panel__nav--down js-down">Testimonials</span>
                 <span class="panel__zoom js-zoom">View All</span>
@@ -113,7 +113,7 @@
                 <span class="panel__nav panel__nav--up js-up">Skills</span>
                 <span class="panel__nav panel__nav--right-top js-right js-up">Work</span>
                 <span class="panel__nav panel__nav--right js-right">Home</span>
-                <span class="panel__nav panel__nav--down js-down">Hobbies</span>
+                <span class="panel__nav panel__nav--down js-down">Research</span>
                 <span class="panel__nav panel__nav--right-down js-right js-down">Testimonials</span>
                 <div class="paraHolder no-scroll">
                     <h2>About Me</h2>
@@ -375,47 +375,100 @@
                     </ul>
                 </div>
             </div>
-            <!-- HOBBIES PANEL -->
-            <div class="panel" data-x-pos="-1" data-y-pos="-1" id="hobbies_panel">
+            <!-- RESEARCH PANEL -->
+            <div class="panel no-scroll" data-x-pos="-1" data-y-pos="-1" id="research_panel">
                 <span class="panel__nav panel__nav--up js-up">About Me</span>
                 <span class="panel__nav panel__nav--right-top js-up js-right">Home</span>
                 <span class="panel__nav panel__nav--right js-right">Testimonials</span>
                 <div class="paraHolder">
-                    <h2>Hobbies</h2>
-                    <ul>
+                    <h2>Research</h2>
+                    <ul class="item-list-with-lines">
                         <li>
-                            <span class="hello-red">Equestrian:</span> My
-                            skill with horses is matched only by my love for
-                            them. I have spent hours in the saddle, forming
-                            an unbreakable bond of companionship with my
-                            four-legged friends. During this, I have learnt
-                            a great deal about team-work, trust, and the
-                            importance of a never-say-die attitude.
+                            <h6 class="project-title" onclick="javascript:toggleDescription('qnn-desc')">
+                                Quantum Circuits in Action: Defending Neural Networks from Adversarial
+                                Attacks
+                                <span id="qnn-desc-toggle-arrow-down">
+                                    <i class="fa fa-angle-down"></i>
+                                </span>
+                                <span id="qnn-desc-toggle-arrow-up" style="display: none">
+                                    <i class="fa fa-angle-up"></i>
+                                </span>
+                            </h6>
+                            <div class="item-desc-text" id="qnn-desc">
+                                <ul class="normal-list">
+                                    <li class="job-desc">
+                                        Evaluated adversarial robustness on the MNIST dataset by applying diverse attack
+                                        methods (FGSM, PGD, SINIFGSM, VNIFGSM) using the Torchattacks library on both
+                                        classical CNNs and Quantum Neural Networks (QNNs).
+                                    </li>
+                                    <li class="job-desc">
+                                        Designed and simulated 8 QNN architectures (linear, star, random, and full
+                                        entanglement etc.) with Cirq, demonstrating that quantum models can exhibit up
+                                        to 6.25% improved resistance against complex adversarial perturbations compared
+                                        to baseline CNNs.
+                                    </li>
+                                    <li class="job-desc">
+                                        Developed a noise-augmented training strategy (using Salt-and-Pepper and
+                                        Gaussian noise) that enhanced CNN accuracy by 3-10% and QNN accuracy by 2-6%,
+                                        significantly bolstering model resilience against adversarial attacks.
+                                    </li>
+                                    <li class="job-desc">
+                                        Note: On-going project with plans to publish in a top journal.
+                                    </li>
+                                </ul>
+                                <!-- <a href="https://github.com/cosinesimilarity1/Team-SSAnet" target="_blank"
+                                                        rel="noreferrer noopener">
+                                                        <span class="hello-red">Code</span>
+                                                    </a> -->
+
+                                <figure>
+                                    <img src="assets/qnn.png" alt="qnn" />
+                                </figure>
+                            </div>
                         </li>
-                        <br />
                         <li>
-                            <span class="hello-red">History Buff:</span> The
-                            past is a great teacher. I spend a fair share of
-                            my day learning about ancient civilizations,
-                            cultures, and people. I am especially fascinated
-                            in the antiquity and medieval period. What's
-                            your favorite empire?
-                        </li>
-                        <br />
-                        <li>
-                            <span class="hello-red">Swimming:</span>
-                            Whenever I need to clear my head, I head to the
-                            pool. Swimming is my go-to stress buster.
-                        </li>
-                        <br />
-                        <li>
-                            <span class="hello-red">Reading:</span> I am an
-                            avid reader and enjoy reading books on a wide
-                            range of topics. I am especially fond of
-                            historical fiction, fantasy, and science
-                            fiction. Some of my favorite authors include
-                            George R.R. Martin, J.R.R. Tolkien, and Isaac
-                            Asimov.
+                            <h6 class="project-title" onclick="javascript:toggleDescription('breast-cancer-desc')">
+                                Concordance in Machine Learning and Deep Learning for Breast Cancer Screening
+                                <span id="breast-cancer-desc-toggle-arrow-down">
+                                    <i class="fa fa-angle-down"></i>
+                                </span>
+                                <span id="breast-cancer-desc-toggle-arrow-up" style="display: none">
+                                    <i class="fa fa-angle-up"></i>
+                                </span>
+                            </h6>
+                            <div class="item-desc-text" id="breast-cancer-desc">
+                                <ul class="normal-list">
+                                    <li class="job-desc">
+                                        Enhanced tumor detection accuracy to 77% with 91% AUC by fine-tuning ResNet50
+                                        and InceptionNetV2 models for breast cancer screening, leveraging Java and
+                                        Python for model optimization.
+                                    </li>
+                                    <li class="job-desc">
+                                        Processed and integrated 5TB of image and clinical data by creating end-to-end
+                                        pipelines, ensuring seamless system integration and efficient data handling
+                                        using ETL processes.
+                                    </li>
+                                    <li class="job-desc">
+                                        Improved diagnostic prediction by implementing Naïve Bayes, SVMs, kNNs, Decision
+                                        Trees, and Logistic Regression, enhancing system integration and leveraging SQL
+                                        for data manipulation.
+                                    </li>
+                                </ul>
+                                <a href="https://github.com/cosinesimilarity1/Team-SSAnet" target="_blank"
+                                    rel="noreferrer noopener">
+                                    <span class="hello-red">Code</span>
+                                </a>
+
+                                <a href="https://github.com/cosinesimilarity1/Team-SSAnet" target="_blank"
+                                    rel="noreferrer noopener">
+                                    <figure>
+                                        <img src="assets/embed.png" alt="pipeline" class="" />
+                                        <figcaption>
+                                            Click to view the site
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -434,7 +487,7 @@
                         download="Aditya Prakash.pdf">Download Resume</a>
                     <ul class="item-list-with-lines no-scroll">
                         <li>
-                            <h6 class="no-scroll" onclick="javascript:toggleDescription('emory-ta-desc')">
+                            <h6 class="no-scroll project-title" onclick="javascript:toggleDescription('emory-ta-desc')">
                                 Emory University
                                 <span id="emory-ta-desc-toggle-arrow-down">
                                     <i class="fa fa-angle-down"></i>
@@ -507,7 +560,8 @@
                             </div>
                         </li>
                         <li>
-                            <h6 class="no-scroll" onclick="javascript:toggleDescription('watto-intern-desc')">
+                            <h6 class="no-scroll project-title"
+                                onclick="javascript:toggleDescription('watto-intern-desc')">
                                 Watto AI (YC S23)
                                 <span id="watto-intern-desc-toggle-arrow-down">
                                     <i class="fa fa-angle-down"></i>
@@ -541,7 +595,8 @@
                             </div>
                         </li>
                         <li>
-                            <h6 class="no-scroll" onclick="javascript:toggleDescription('rakuten-intern-desc')">
+                            <h6 class="no-scroll project-title"
+                                onclick="javascript:toggleDescription('rakuten-intern-desc')">
                                 Rakuten
                                 <span id="rakuten-intern-desc-toggle-arrow-down">
                                     <i class="fa fa-angle-down"></i>
@@ -573,7 +628,8 @@
                             </div>
                         </li>
                         <li>
-                            <h6 class="no-scroll" onclick="javascript:toggleDescription('workat-intern-desc')">
+                            <h6 class="no-scroll project-title"
+                                onclick="javascript:toggleDescription('workat-intern-desc')">
                                 workat.tech
                                 <span id="workat-intern-desc-toggle-arrow-down">
                                     <i class="fa fa-angle-down"></i>
@@ -615,7 +671,7 @@
             </div>
             <!-- TESTIMONIALS PANEL -->
             <div class="panel no-scroll" data-x-pos="0" data-y-pos="-1" id="testimonials_panel">
-                <span class="panel__nav panel__nav--left js-left">Hobbies</span>
+                <span class="panel__nav panel__nav--left js-left">Research</span>
                 <span class="panel__nav panel__nav--left-top js-up js-left">About Me</span>
                 <span class="panel__nav panel__nav--up js-up">Home</span>
                 <span class="panel__nav panel__nav--right-top js-up js-right">Education</span>
@@ -1433,59 +1489,48 @@
                 <span class="panel__nav panel__nav--down js-down">Education</span>
                 <div class="paraHolder">
                     <h2>Projects</h2>
-                    <br />
-                    Here are some of the most challenging projects I have
-                    built, which have helped me hone my skills as a
-                    programmer, and open new avenues for me to explore. In
-                    the spirit of open-source, code for all of these
-                    projects are available on my GitHub page:
-                    <a href="https://github.com/AdityaPrakash-26" target="_blank" rel="noreferrer noopener"><span
-                            class="hello-red">AdityaPrakash-26</span></a>
                     <ul class="item-list-with-lines">
                         <li>
-                            <h6 onclick="javascript:toggleDescription('design-sprint-desc')">
-                                Emory Design Sprints
-                                <span id="design-sprint-desc-toggle-arrow-down">
+                            <h6 class="project-title" onclick="javascript:toggleDescription('mcp-desc')">
+                                Canvas AI Assistant
+                                <span id="mcp-desc-toggle-arrow-down">
                                     <i class="fa fa-angle-down"></i>
                                 </span>
-                                <span id="design-sprint-desc-toggle-arrow-up" style="display: none">
+                                <span id="mcp-desc-toggle-arrow-up" style="display: none">
                                     <i class="fa fa-angle-up"></i>
                                 </span>
                             </h6>
-                            <div class="item-desc-text" id="design-sprint-desc">
-                                <a href="https://medium.com/@jordanleslie/redesigning-the-atl-airport-website-6169e6759257"
-                                    target="_blank" rel="noreferrer noopener">
-                                    <div style="text-decoration: underline;">Design Sprint 1</div>
-                                </a>
-                                <a href="https://medium.com/@aditya.prakash_68444/design-for-understanding-visualizing-the-growing-cost-of-living-in-atlanta-8722955b9537"
-                                    target="_blank" rel="noreferrer noopener">
-                                    <div style="text-decoration: underline;">Design Sprint 2</div>
-                                </a>
-                                <a href="https://medium.com/@tierranaa29/the-illusive-an-illusionary-exhibit-148fffbb42a7"
-                                    target="_blank" rel="noreferrer noopener">
-                                    <div style="text-decoration: underline;">Design Sprint 3</div>
-                                </a>
-                                <a href="https://medium.com/@asarebaiden.academic/re-design-and-extend-metro-monopoly-atlanta-edition-c10690073c15"
-                                    target="_blank" rel="noreferrer noopener">
-                                    <div style="text-decoration: underline;">Design Sprint 4</div>
-                                </a>
-                                <a href="https://medium.com/@aditya.prakash_68444/design-for-accessibility-cs-584-at-emory-university-137c64263d75"
-                                    target="_blank" rel="noreferrer noopener">
-                                    <div style="text-decoration: underline;">Design for accessibility</div>
-                                </a>
-                                <a href="https://medium.com/@aditya.prakash_68444/cs-584-design-studio-in-human-computer-interaction-health-design-0b410128bc02"
-                                    target="_blank" rel="noreferrer noopener">
-                                    <div style="text-decoration: underline;">Health Design</div>
-                                </a>
-                                <a href="https://medium.com/@aditya.prakash_68444/cs-584-design-studio-in-human-computer-interaction-needfinding-exercise-d75610acf18f"
-                                    target="_blank" rel="noreferrer noopener">
-                                    <div style="text-decoration: underline;">Needfinding Exercise</div>
-                                </a>
+                            <div class="item-desc-text" id="mcp-desc">
+                                <ul class="normal-list">
+                                    <li class="job-desc">
+                                        Improved accessibility of AI-driven tools for students by developing a Python
+                                        tool that creates an MCP-compliant server integrating AI assistants with Canvas
+                                        LMS, structuring course data into knowledge graphs and storing it in SQLite.
+                                    </li>
+                                    <li class="job-desc">
+                                        Enhanced student experience by developing a syllabus parser that integrates with
+                                        the Canvas API, automatically updating course modules, assignment due dates, and
+                                        exam schedules and reducing manual tracking by 100%.
+                                    </li>
+                                    <li class="job-desc">
+                                        Built an AI-powered lecture material retrieval system, enabling instant access
+                                        to summarized content and lecture insights, improving revision speed by 2× for
+                                        the average student and ensuring comprehensive study resources for students.
+                                    </li>
+                                </ul>
+                                <!-- <a href="https://github.com/cosinesimilarity1/Team-SSAnet" target="_blank"
+                                    rel="noreferrer noopener">
+                                    <span class="hello-red">Code</span>
+                                </a> -->
+
+                                <figure>
+                                    <img src="assets/qnn.png" alt="qnn" />
+                                </figure>
                             </div>
                         </li>
                         <li>
-                            <h6 onclick="javascript:toggleDescription('breast-cancer-desc')">
-                                Concordance between ML and DL in Breast Cancer Detection
+                            <h6 class="project-title" onclick="javascript:toggleDescription('breast-cancer-desc')">
+                                Intelligent Movie Recommendation System
                                 <span id="breast-cancer-desc-toggle-arrow-down">
                                     <i class="fa fa-angle-down"></i>
                                 </span>
@@ -1494,11 +1539,24 @@
                                 </span>
                             </h6>
                             <div class="item-desc-text" id="breast-cancer-desc">
-                                A Python project which uses machine learning and deep learning to detect breast
-                                cancer.
-                                The project uses the Emory Breast Imaging dataset to train a machine learning model
-                                and a deep learning model. The project also compares the performance of both models.
-                                <br />
+                                <ul class="normal-list">
+                                    <li class="job-desc">
+                                        Architected and developed a full-stack Movie Recommender System using Remix,
+                                        React.js, Flask and PostgreSQL with advanced caching strategies using Redis.js
+                                        to achieve an 85% cache hit rate, which reduced redundant database queries by
+                                        40%.
+                                    </li>
+                                    <li class="job-desc">
+                                        Integrated third-party TMDB API to aggregate a comprehensive movie database and
+                                        implemented a custom indexing strategy that cached the 200 most frequently
+                                        accessed movies, reducing query response times by 80%.
+                                    </li>
+                                    <li class="job-desc">
+                                        Achieved a 95% user satisfaction rating by conducting iterative usability tests,
+                                        gathering actionable feedback, and refining both the interface and functionality
+                                        to create a more intuitive UI/UX and engaging features.
+                                    </li>
+                                </ul>
                                 <a href="https://github.com/cosinesimilarity1/Team-SSAnet" target="_blank"
                                     rel="noreferrer noopener">
                                     <span class="hello-red">Code</span>
@@ -1516,7 +1574,7 @@
                             </div>
                         </li>
                         <li>
-                            <h6 onclick="javascript:toggleDescription('sorting-visualizer-desc')">
+                            <h6 class="project-title" onclick="javascript:toggleDescription('sorting-visualizer-desc')">
                                 Sorting Visualizer
                                 <span id="sorting-visualizer-desc-toggle-arrow-down">
                                     <i class="fa fa-angle-down"></i>
@@ -1553,176 +1611,6 @@
                                         </figcaption>
                                     </figure>
                                 </a>
-                            </div>
-                        </li>
-                        <!-- <li>
-                            <h6 onclick="javascript:toggleDescription('color-detection-desc')">
-                                Color Detection
-                                <span id="color-detection-desc-toggle-arrow-down">
-                                    <i class="fa fa-angle-down"></i>
-                                </span>
-                                <span id="color-detection-desc-toggle-arrow-up" style="display: none">
-                                    <i class="fa fa-angle-up"></i>
-                                </span>
-                            </h6>
-                            <div class="item-desc-text" id="color-detection-desc">
-                                A command line project built with Python,
-                                OpenCV, and Pandas. The user clicks anywhere
-                                on the image and the software returns the
-                                color which was clicked upon.
-                                <br />
-                                <a href="https://github.com/AdityaPrakash-26/ColorDetectionProject" target="_blank"
-                                    rel="noreferrer noopener">
-                                    <span class="hello-red">Code</span>
-                                </a>
-                                <img src="assets/color.webp" alt="color" class="img-media" />
-                            </div>
-                        </li> -->
-                        <li>
-                            <h6 onclick="javascript:toggleDescription('rome-desc')">
-                                Rome Total Realism
-                                <span id="rome-desc-toggle-arrow-down">
-                                    <i class="fa fa-angle-down"></i>
-                                </span>
-                                <span id="rome-desc-toggle-arrow-up" style="display: none">
-                                    <i class="fa fa-angle-up"></i>
-                                </span>
-                            </h6>
-                            <div class="item-desc-text" id="rome-desc">
-                                I worked as a programmer for the largest mod
-                                of Total War: Rome Remastered, with over
-                                25,000 subscribers on the steam workshop. I
-                                was responsible for developing a file
-                                management system and implementing game
-                                mechanics such as logistics, attrition, and
-                                supply chains.
-                                <br />
-                                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2487698001"
-                                    target="_blank" rel="noreferrer noopener">
-                                    <span class="hello-red">Website</span>
-                                </a>
-                                <br />
-                                <br />
-                                My additional responsibilities included:
-                                <ul class="normal-list">
-                                    <li>
-                                        Programming the traits and
-                                        ancillaries used in-game.
-                                    </li>
-                                    <li>
-                                        Coding in music using the Engine
-                                        API.
-                                    </li>
-                                    <li>
-                                        Implementing new mechanics via C++
-                                        scripts.
-                                    </li>
-                                </ul>
-                                <br />
-                                <img src="assets/rtr-ss.webp" alt="game_screenshot" />
-                                <br />
-                            </div>
-                        </li>
-                        <li>
-                            <h6 onclick="javascript:toggleDescription('vscode-workat-desc')">
-                                VSCode-WorkAt
-                                <span id="vscode-workat-desc-toggle-arrow-down">
-                                    <i class="fa fa-angle-down"></i>
-                                </span>
-                                <span id="vscode-workat-desc-toggle-arrow-up" style="display: none">
-                                    <i class="fa fa-angle-up"></i>
-                                </span>
-                            </h6>
-                            <div class="item-desc-text" id="vscode-workat-desc">
-                                A VSCode extension that lets you solve
-                                problems from workat.tech in Visual Studio
-                                Code. The extension is built with
-                                JavaScript, and is available for free on the
-                                Visual Studio Marketplace.
-                                <br />
-                                <a href="https://marketplace.visualstudio.com/items?itemName=AdityaPrakash.vscode-workat"
-                                    target="_blank" rel="noreferrer noopener">
-                                    <span class="hello-red">Marketplace Link</span>
-                                </a>
-                                |
-                                <a href="https://workat.tech" target="_blank" rel="noreferrer noopener">
-                                    <span class="hello-red">Website</span>
-                                </a>
-                                |
-                                <a href="https://github.com/AdityaPrakash-26/VSCode-WorkAt" target="_blank"
-                                    rel="noreferrer noopener">
-                                    <span class="hello-red">Code</span>
-                                </a>
-                                <br />
-                                <br />
-                                Features:
-                                <ul class="normal-list">
-                                    <li>
-                                        Solve problems topics-wise,
-                                        company-wise, or use the curated
-                                        lists.
-                                    </li>
-                                    <li>
-                                        Support for C++, Java, and Python.
-                                    </li>
-                                    <li>
-                                        Automatically creates folders and
-                                        files for better management.
-                                    </li>
-                                </ul>
-                                <img class="long" src="assets/vscode-workat.webp" alt="workat extension"
-                                    class="img-media" />
-                                <img class="long" src="assets/problem.webp" alt="problem description"
-                                    class="img-media" />
-                            </div>
-                        </li>
-                        <!-- <li>
-                            <h6 onclick="javascript:toggleDescription('sound-visualizer-desc')">
-                                Sound Visualizer<span id="sound-visualizer-desc-toggle-arrow-down">
-                                    <i class="fa fa-angle-down"></i>
-                                </span>
-                                <span id="sound-visualizer-desc-toggle-arrow-up" style="display: none">
-                                    <i class="fa fa-angle-up"></i>
-                                </span>
-                            </h6>
-                            <div class="item-desc-text" id="sound-visualizer-desc">
-                                An Unreal Engine 4 utility tool built with
-                                C++ for developers to visualize sound waves
-                                in 3D. Fully customisable, with different
-                                options for sound track, 3D meshes, textures
-                                and more.
-                                <br />
-                                <a href="https://github.com/AdityaPrakash-26/SoundWaveVisualizer" target="_blank"
-                                    rel="noreferrer noopener">
-                                    <span class="hello-red">Code</span>
-                                </a>
-                                <img src="assets/sound.webp" alt="sound" class="img-media" />
-                            </div>
-                        </li> -->
-                        <li>
-                            <h6 onclick="javascript:toggleDescription('lane-detection-desc')">
-                                Lane Detection
-                                <span id="lane-detection-desc-toggle-arrow-down">
-                                    <i class="fa fa-angle-down"></i>
-                                </span>
-                                <span id="lane-detection-desc-toggle-arrow-up" style="display: none">
-                                    <i class="fa fa-angle-up"></i>
-                                </span>
-                            </h6>
-                            <div class="item-desc-text" id="lane-detection-desc">
-                                A Python software built with OpenCV, Numpy
-                                and Matplotlib. The software takes in a
-                                video and returns the lane lines detected as
-                                MP4 video. Built for use in self-driving
-                                cars.
-                                <br />
-                                <a href="https://github.com/AdityaPrakash-26/Lane-Detection" target="_blank"
-                                    rel="noreferrer noopener">
-                                    <span class="hello-red">Code</span>
-                                </a>
-                                <video controls id="lane-vid" class="img-media">
-                                    <source src="assets/lane.mp4" type="video/mp4" />
-                                </video>
                             </div>
                         </li>
                     </ul>

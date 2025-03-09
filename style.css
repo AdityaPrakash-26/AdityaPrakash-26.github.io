@@ -927,9 +927,9 @@ ul.two-column-list {
 	border: 1px solid #ff96ad;
 	border-radius: 5px;
 	padding: 10px;
-	font-size: 1rem;
+	font-size: 12px;
 	font-weight: 700;
-	color: white;
+	color: #000;
 	text-align: center;
 }
 
@@ -942,6 +942,11 @@ ul.two-column-list {
 
 .job-desc {
 	font-size: 20px;
+}
+
+.project-title {
+	font-size: 20px;
+	padding-top: 17px;
 }
 
 @media screen and (max-width: 1500px) {
