@@ -1,0 +1,4 @@
+# Filled in by bin/update_scholar_citations.py once a Google Scholar ID is set in _data/socials.yml.
+metadata:
+  last_updated:
+papers: {}

@@ -1,0 +1,7 @@
+# Links co-author names in your publication list to their homepages.
+# Key: the co-author's last name in lowercase. Example:
+#
+# "xiong":
+#   - firstname: ["Li", "L."]
+#     url: https://example.com
+{}

@@ -1,0 +1,6 @@
+# Colors and links for the venue badges (the `abbr` field in papers.bib). Example:
+#
+# "NeurIPS":
+#   url: https://neurips.cc/
+#   color: "#4e2a84"
+{}

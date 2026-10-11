@@ -1,0 +1,6 @@
+# Data for the /cv/ page, which is hidden for now (see `published: false` in _pages/cv.md).
+# To fill it in later, follow al-folio's example:
+# https://github.com/alshedivat/al-folio/blob/main/_data/cv.yml
+cv:
+  name: Aditya Prakash
+  sections: {}
