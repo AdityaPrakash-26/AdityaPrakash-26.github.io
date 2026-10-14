@@ -545,6 +545,18 @@ hr {
   z-index: 10;
 }
 
+#clusters > a {
+  color: #a6e22e;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+#clusters > a:hover {
+  color: #ae81ff;
+  text-decoration: underline;
+  cursor: auto;
+}
+
 mark,
 .mark {
   background-color: #282828;
