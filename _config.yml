@@ -111,7 +111,10 @@ max_width: 930px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: /assets/img/prof_pic.jpg # The site-wide (default for all links) Open Graph preview image
+og_image: /assets/img/og_image.jpg # The site-wide (default for all links) Open Graph preview image
+og_image_width: 1200
+og_image_height: 1200
+og_image_alt: Headshot of Aditya Prakash
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
